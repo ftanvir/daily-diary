@@ -34,6 +34,7 @@ function autoloader($resource = '') {
         return;
     }
 
+    
     $directory = '';
     $file_name = '';
 
@@ -56,15 +57,21 @@ function autoloader($resource = '') {
                 break;
 
             default:
-                $directory = 'inc';
+                $directory = 'classes';
                 $file_name = sprintf('class-%s', trim(strtolower($path[1])));
                 break;
         }
     }
 
+    
+
     $resource_path = trailingslashit(
         get_template_directory() . "/inc/{$directory}/{$file_name}.php"
     );
+
+    $temp = rtrim($resource_path, '/');
+    $resource_path = $temp;
+
 
     if (!empty($resource_path) && file_exists($resource_path)) {
 
