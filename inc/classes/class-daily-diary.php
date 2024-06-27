@@ -19,6 +19,8 @@ class daily_diary{
         //load class
         Assets::get_instance();
 
+
+
         $this->setup_hooks();
     }
 
@@ -29,10 +31,11 @@ class daily_diary{
          * 
          */
 
-
     }
 
-
-
-
+    
 }
+
+
+
+

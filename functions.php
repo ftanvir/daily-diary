@@ -27,6 +27,8 @@ if(!defined('DAILY_DIARY_BUILD_LIB_URI')){
     define('DAILY_DIARY_BUILD_LIB_URI', untrailingslashit(get_template_directory_uri()) . '/assets/build/library');
 }
 
+
+
 require_once DAILY_DIARY_DIR_PATH . '/inc/helpers/autoloader.php';
 // require_once DAILY_DIARY_DIR_PATH . '/inc/classes/class-daily-diary-theme.php';
 //instanciate the daily_diary_theme class
