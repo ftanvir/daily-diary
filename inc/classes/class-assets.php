@@ -29,7 +29,7 @@ class Assets{
 
     public function register_styles() {
 
-        echo "Hello from register_styles() method<br>";
+        // echo "Hello from register_styles() method<br>";
         //Register Styles
         wp_register_style('bootstrap-css', DAILY_DIARY_BUILD_LIB_URI . '/css/bootstrap.min.css', [], false, 'all');
         
